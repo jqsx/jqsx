@@ -1,0 +1,86 @@
+.navBar {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    z-index: 10;
+}
+
+.pagetitle {
+    height: 6vh;
+    font-size: 5vh;
+    margin: 2.5vh;
+    border-left: var(--pagecolor) 0.3em solid;
+    text-indent: 0.3em;
+    color: #00aaff;
+    transition-duration: 0.2s;
+}
+
+.pagetitle:hover {
+    scale: 0.95 0.95;
+}
+
+.pagetitle.end {
+    color: var(--pagecolor);
+    margin: none;
+    margin-left: 0;
+    border-left: none;
+}
+
+* {
+    text-decoration: none;
+    --pagecolor: #5dd7ff; /* #ffa3a3 #ffbcbc */
+    --pagebackground: #14adff;
+}
+
+.left { 
+    align-content: center;
+    justify-content: left;
+    display: flex;
+    width: max-content;
+    height: inherit;
+    width: 50vw;
+}
+
+.right { 
+    align-content: center;
+    justify-content: right;
+    display: flex;
+    width: 50vw;
+    height: inherit;
+}
+
+.link {
+    background-color: transparent;
+    font-size: 3vh;
+    margin-top: 2.5vh;
+    margin-right: 2vw;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+
+    border-bottom: var(--pagecolor) 0em solid;
+    padding: 1vh;
+    transition-duration: 0.2s;
+}
+
+.link:hover {
+    border-bottom: var(--pagecolor) 0.1em solid;
+    scale: 0.95 0.95;
+}
+
+.link:active {
+    transform: translateY(-0.1em);
+}
+
+.Footer {
+    width: 100vw;
+    background-color: white;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2vh;
+}

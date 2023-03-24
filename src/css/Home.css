@@ -1,0 +1,124 @@
+/* .mebglmao {
+    background-image: url('../../public/suspicios.jpeg');
+    background-repeat: no-repeat;
+} */
+
+.image {
+    background-color: white;
+    width: calc(20vh * 1.77);
+    height: 20vh;
+    background-size: calc(20vh * 1.77) 20vh;
+    border-radius: 1vw;
+}
+
+.image.wnjo {
+    background-image: url('../../public/wnjo.png');
+}
+
+.mepic {
+    min-width: 30vh;
+    min-height: 30vh;
+    background-color: #777;
+    border-radius: 1em;
+}
+
+@media (max-width: 500px) {
+    .bigtext {
+        font-size: 4.5vh !important;
+    }
+
+    .bigtext.colored {
+        color: #00aaff !important;
+    }
+
+    .contactMebutton {
+        max-height: 3vh !important;
+        font-size: 3vh !important;
+    }
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: translateY(0.2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
+.bigtext {
+    font-size: 5vw;
+    animation: load 1s ease-in-out;
+}
+
+.bigtext.colored {
+    color: #a1e0ff;
+    transition-duration: 1s;
+    text-shadow: #afe0ff 0.03em 0em 0.03em, #afe0ff -0.03em 0em 0.03em;
+    animation: coloredload 2s ease-in-out;
+}
+
+@keyframes coloredload {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.bigtext.colored:hover {
+    color: #00aaff;
+}
+
+
+.contactMebutton {
+    --color: #ddd;
+    --bg: #ddd;
+    --size: 7em;
+    max-height: 2vw;
+    min-width: max-content;
+    font-size: 2vw;
+    color: #777;
+    background: var(--bg);
+    background: linear-gradient(45deg, var(--color) 0% 1%, var(--bg) 6% 45%, var(--color) 49% 51%, var(--bg) 56% 94%, var(--color) 99% 100%);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: var(--size) var(--size);
+    padding: 0.5vh;
+    border-radius: 2vw;
+    margin: 0.5vh;
+    transition-duration: 0.3s;
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    animation: scroll infinite ease-in-out 1s;
+}
+
+.contactMebutton:hover {
+    --color: #ffffff;
+    --bg: rgb(84, 189, 255);
+    border:rgb(90, 192, 255, 0.3) 0.1em solid;
+    color: #eee;
+    text-shadow: white 0.1em 0em 0.2em, white -0.1em 0em 0.2em;
+    box-shadow: #a1e0ff 1em 0em 1em, #a1e0ff -1em 0em 1em;
+}
+
+@keyframes scroll {
+    0% {
+        background-position-x: 0em;
+        background-size: var(--size) var(--size);
+    }
+    50% {
+        background-size: calc(var(--size) - 1em) calc(var(--size) - 1em);
+    }
+    100% {
+        background-position-x: var(--size);
+        background-size: var(--size) var(--size);
+    }
+}
