@@ -15,6 +15,10 @@
     background-image: url('../../public/wnjo.png');
 }
 
+.image.builder {
+    background-image: url('../../public/builder.png');
+}
+
 .mepic {
     min-width: 30vh;
     min-height: 30vh;

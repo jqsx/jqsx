@@ -47,7 +47,8 @@ function Home() {
             <Tagbar
               tags={[
                 "Unity",
-                "React",
+                "ReactJS",
+                "NextJS",
                 "C#",
                 "JS",
                 "NodeJS",
@@ -79,8 +80,7 @@ function Home() {
               <h2 className="paragraph">
                 Wnjo a 2D scroller survival game in the browser. A game that I
                 challanged myself to make as a learning experience coded in java
-                script with a physics, rendering and websocket multiplayer
-                solution.
+                script with a physics, rendering and websocket multiplayer.
               </h2>
               <div className="container flex">
                 <div className="image wnjo"></div>
@@ -88,20 +88,20 @@ function Home() {
               <Tagbar tags={["Web", "WebSockets", "Multiplayer", "JS", "2D"]} links={[{link: "https://github.com/jqsx/WNJo2", name: "GitHub"}]} />
             </div>
             <div className="container">
-              <h1 className="title">Procedural Generation</h1>
+              <h1 className="title">Builder</h1>
               <h2 className="paragraph">
-                My procedural generation prototype featuring 3D generated chunk
-                world, as a test for the implementation of perlin noise.
+                My procedural generation game featuring 2D generated chunk
+                world, as a game similar to WNJO, greatly inspired by Terraria.
               </h2>
               <div className="container flex">
-                <div className="image"></div>
+                <div className="image builder"></div>
               </div>
-              <Tagbar tags={["Unity", "C#", "3D", "Procedural Generation"]} links={[{link: "https://github.com/jqsx/procedural-generation", name: "GitHub"}]} />
+              <Tagbar tags={["Java", "Maven", "2D", "Noise", "Sandbox"]} links={[{link: "https://jqsx.itch.io/builder", name: "itch.io"}]} />
             </div>
             <div className="container">
               <h1 className="title">Prototype</h1>
               <h2 className="paragraph">
-                My current project currently without a name, a 2D rougelike game
+                My current project currently without a name, a 2D rouge-like game
                 deriving most of the gameplay from procedurally generated
                 content.
               </h2>
